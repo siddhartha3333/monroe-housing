@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Monroe Affordable Housing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Monroe Housing</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html">Housing Listings</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="resources-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Housing Resources</h1>
+                <p>Access information about housing assistance programs, application processes, and support services in Monroe, Louisiana.</p>
+            </div>
+
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="assistance">Housing Assistance</button>
+                    <button class="tab-btn" data-tab="emergency">Emergency Housing</button>
+                    <button class="tab-btn" data-tab="section8">Section 8 Information</button>
+                    <button class="tab-btn" data-tab="nonprofits">Local Nonprofits</button>
+                </div>
+
+                <div class="tab-content active" id="assistance">
+                    <div class="resource-cards">
+                        <div class="resource-card">
+                            <h3>Monroe Housing Authority</h3>
+                            <p class="subtitle">Public housing and rental assistance programs</p>
+                            <p>The Monroe Housing Authority provides affordable housing options through public housing and Housing Choice Voucher programs (Section 8).</p>
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Public Housing Units</li>
+                                <li>Housing Choice Vouchers</li>
+                                <li>Family Self-Sufficiency Program</li>
+                                <li>Resident Services</li>
+                            </ul>
+                            <div class="contact-info">
+                                <p><strong>Phone:</strong> (318) 388-1500</p>
+                                <a href="https://monroehousing.com" target="_blank" class="btn btn-outline">Visit Website</a>
+                            </div>
+                        </div>
+
+                        <div class="resource-card">
+                            <h3>Louisiana Housing Corporation</h3>
+                            <p class="subtitle">State-level housing assistance programs</p>
+                            <p>The Louisiana Housing Corporation administers federal and state programs designed to advance the development of affordable housing across Louisiana.</p>
+                            <h4>Programs:</h4>
+                            <ul>
+                                <li>Low-Income Home Energy Assistance Program (LIHEAP)</li>
+                                <li>Housing Choice Voucher Program</li>
+                                <li>Rental Assistance</li>
+                                <li>Homeownership Programs</li>
+                            </ul>
+                            <div class="contact-info">
+                                <p><strong>Phone:</strong> (888) 454-2001</p>
+                                <a href="https://www.lhc.la.gov" target="_blank" class="btn btn-outline">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>How to Apply for Housing Assistance</h3>
+                        <ol>
+                            <li>Determine which program is right for you based on your income and needs.</li>
+                            <li>Gather required documentation (ID, proof of income, Social Security cards, etc.).</li>
+                            <li>Complete the application form for the specific program.</li>
+                            <li>Submit your application to the appropriate agency.</li>
+                            <li>Attend any required interviews or briefings.</li>
+                            <li>Wait for eligibility determination (this may take several weeks).</li>
+                        </ol>
+                        <a href="contact.html" class="btn btn-primary">Need Help with Applications?</a>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="emergency">
+                    <div class="emergency-box">
+                        <h3>Emergency Housing Hotline</h3>
+                        <p>If you are experiencing homelessness or are at risk of becoming homeless, call the Emergency Housing Hotline:</p>
+                        <div class="hotline">
+                            <a href="tel:+13185551234">(318) 512-6373</a>
+                            <p>Available 24/7</p>
+                        </div>
+                    </div>
+
+                    <div class="resource-cards">
+                        <div class="resource-card">
+                            <h3>The Wellspring</h3>
+                            <p class="subtitle">Emergency shelter and transitional housing</p>
+                            <p>The Wellspring provides emergency shelter for individuals and families experiencing homelessness or fleeing domestic violence.</p>
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Emergency Shelter</li>
+                                <li>Transitional Housing</li>
+                                <li>Domestic Violence Services</li>
+                                <li>Housing Counseling</li>
+                            </ul>
+                            <div class="contact-info">
+                                <p><strong>Phone:</strong> (318) 323-1505</p>
+                                <a href="https://wellspringalliance.org" target="_blank" class="btn btn-outline">Visit Website</a>
+                            </div>
+                        </div>
+
+                        <div class="resource-card">
+                            <h3>Salvation Army</h3>
+                            <p class="subtitle">Emergency shelter and support services</p>
+                            <p>The Salvation Army provides emergency shelter, meals, and support services for individuals experiencing homelessness.</p>
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Emergency Shelter</li>
+                                <li>Meals Program</li>
+                                <li>Utility Assistance</li>
+                                <li>Case Management</li>
+                            </ul>
+                            <div class="contact-info">
+                                <p><strong>Phone:</strong> (318) 325-1755</p>
+                                <a href="https://salvationarmyalm.org/monroe" target="_blank" class="btn btn-outline">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="section8">
+                    <div class="info-box">
+                        <h3>Section 8 Housing Choice Voucher Program</h3>
+                        <p>The Housing Choice Voucher Program (Section 8) is a federal program that assists very low-income families, the elderly, and the disabled to afford decent, safe, and sanitary housing in the private market.</p>
+                        
+                        <div class="info-columns">
+                            <div class="info-column">
+                                <h4>Eligibility Requirements:</h4>
+                                <ul>
+                                    <li>Income must be below 50% of area median income</li>
+                                    <li>U.S. citizenship or eligible immigration status</li>
+                                    <li>Satisfactory criminal background check</li>
+                                    <li>Good rental history</li>
+                                </ul>
+                            </div>
+                            <div class="info-column">
+                                <h4>Application Process:</h4>
+                                <ol>
+                                    <li>Apply when waitlist is open</li>
+                                    <li>Complete eligibility interview</li>
+                                    <li>Receive voucher if eligible</li>
+                                    <li>Find housing that accepts vouchers</li>
+                                    <li>Pass housing quality inspection</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="waitlist-status">
+                        <h3>Current Section 8 Waitlist Status</h3>
+                        <p class="subtitle">Monroe Housing Authority</p>
+                        <div class="status-alert">
+                            <p>The Section 8 waitlist is currently <strong>CLOSED</strong>. Next anticipated opening: September 2025</p>
+                        </div>
+                        <p>When the waitlist opens, applications will be accepted online through the Monroe Housing Authority website or in person at their office.</p>
+                        <a href="https://monroehousing.com/section8" target="_blank" class="btn btn-primary">Check Waitlist Status</a>
+                    </div>
+
+                    <div class="resource-cards">
+                        <div class="resource-card">
+                            <h3>Landlord Resources</h3>
+                            <p class="subtitle">Information for property owners</p>
+                            <p>Property owners can participate in the Section 8 program by renting to voucher holders. Learn about the benefits and requirements.</p>
+                            <a href="#" class="btn btn-outline">Landlord Information Packet</a>
+                        </div>
+
+                        <div class="resource-card">
+                            <h3>Tenant Resources</h3>
+                            <p class="subtitle">Information for voucher holders</p>
+                            <p>Learn about your rights and responsibilities as a Section 8 voucher holder, including reporting requirements and housing quality standards.</p>
+                            <a href="#" class="btn btn-outline">Tenant Handbook</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="nonprofits">
+                    <div class="resource-cards nonprofit-grid">
+                        <div class="resource-card">
+                            <h3>United Way of Northeast Louisiana</h3>
+                            <p class="subtitle">Community resources and referrals</p>
+                            <p>United Way connects residents with community resources, including housing assistance, through their 211 helpline.</p>
+                            <div class="contact-info">
+                                <p><strong>Phone:</strong> Dial 211</p>
+                                <a href="https://unitedwaynela.org" target="_blank" class="btn btn-outline">Visit Website</a>
+                            </div>
+                        </div>
+
+                        <div class="resource-card">
+                            <h3>Ouachita Parish Community Action</h3>
+                            <p class="subtitle">Housing and utility assistance</p>
+                            <p>Provides assistance with rent, utilities, and weatherization for low-income residents of Ouachita Parish.</p>
+                            <div class="contact-info">
+                                <p><strong>Phone:</strong> (318) 322-7151</p>
+                                <a href="#" class="btn btn-outline">Visit Website</a>
+                            </div>
+                        </div>
+
+                        <div class="resource-card">
+                            <h3>Christopher Youth Center</h3>
+                            <p class="subtitle">Youth housing and services</p>
+                            <p>Provides emergency shelter, transitional living, and supportive services for homeless and at-risk youth ages 16-24.</p>
+                            <div class="contact-info">
+                                <p><strong>Phone:</strong> (318) 345-5556</p>
+                                <a href="https://christopheryouth.org" target="_blank" class="btn btn-outline">Visit Website</a>
+                            </div>
+                        </div>
+
+                        <div class="resource-card">
+                            <h3>NELA Housing Coalition</h3>
+                            <p class="subtitle">Housing advocacy and education</p>
+                            <p>Coalition of organizations working to increase affordable housing options and provide housing education in Northeast Louisiana.</p>
+                            <div class="contact-info">
+                                <p><strong>Phone:</strong> (318) 555-4321</p>
+                                <a href="#" class="btn btn-outline">Visit Website</a>
+                            </div>
+                        </div>
+
+                        <div class="resource-card">
+                            <h3>Habitat for Humanity</h3>
+                            <p class="subtitle">Affordable homeownership</p>
+                            <p>Builds and renovates homes in partnership with low-income families to create affordable homeownership opportunities.</p>
+                            <div class="contact-info">
+                                <p><strong>Phone:</strong> (318) 325-8838</p>
+                                <a href="https://www.habitat.org/us-la/monroe/ouachita-hfh" target="_blank" class="btn btn-outline">Visit Website</a>
+                            </div>
+                        </div>
+
+                        <div class="resource-card">
+                            <h3>Catholic Charities</h3>
+                            <p class="subtitle">Emergency assistance</p>
+                            <p>Provides emergency financial assistance for rent and utilities to prevent homelessness for families in crisis.</p>
+                            <div class="contact-info">
+                                <p><strong>Phone:</strong> (318) 323-4637</p>
+                                <a href="#" class="btn btn-outline">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Need Personalized Assistance?</h2>
+                    <p>Our team can help you navigate housing options and resources.</p>
+                </div>
+                <a href="contact.html" class="btn btn-light">Contact Us Today</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Monroe Housing</h3>
+                    <p>Helping Monroe residents find safe, affordable housing options and resources.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="listings.html">Housing Listings</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="resources.html#assistance">Housing Assistance</a></li>
+                        <li><a href="resources.html#emergency">Emergency Housing</a></li>
+                        <li><a href="resources.html#section8">Section 8 Information</a></li>
+                        <li><a href="resources.html#nonprofits">Local Nonprofits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <address>
+                        <p>Monroe, Louisiana</p>
+                        <p>Email: siddharthabudhathoki55@gmail.com</p>
+                        <p>Phone: (318) 512-6373</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Monroe Affordable Housing. All rights reserved.</p>
+                <p>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

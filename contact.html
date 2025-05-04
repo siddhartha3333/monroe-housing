@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Monroe Affordable Housing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Monroe Housing</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html">Housing Listings</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Contact Us</h1>
+                <p>Have questions about affordable housing in Monroe? We're here to help.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-form-container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Send Us a Message</h2>
+                            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                        </div>
+                        <div class="card-body">
+                            <form id="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">Full Name <span class="required">*</span></label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address <span class="required">*</span></label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="topic">Topic <span class="required">*</span></label>
+                                        <select id="topic" name="topic" required>
+                                            <option value="">Select a topic</option>
+                                            <option value="housing-search">Housing Search</option>
+                                            <option value="rental-assistance">Rental Assistance</option>
+                                            <option value="section-8">Section 8 Questions</option>
+                                            <option value="emergency-housing">Emergency Housing</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message <span class="required">*</span></label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                                <div id="contactStatus" style="margin-top:1em;font-weight:bold;"></div>
+                            </form>
+
+                            <div id="formSuccess" class="form-success" style="display: none;">
+                                <h3>Thank You!</h3>
+                                <p>Your message has been sent successfully. We'll get back to you within 1-2 business days.</p>
+                                <button id="sendAnother" class="btn btn-primary">Send Another Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info-container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Contact Information</h2>
+                            <p>Reach out to us directly using the information below.</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <div class="contact-icon">📞</div>
+                                    <div class="contact-details">
+                                        <h3>Phone</h3>
+                                        <p>(318) 512-7270</p>
+                                        <p class="text-small">Monday-Friday, 9am-5pm</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-icon">✉️</div>
+                                    <div class="contact-details">
+                                        <h3>Email</h3>
+                                        <p>siddharthabudhathoki55@gmail.com</p>
+                                        <p class="text-small">We respond within 24-48 hours</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-icon">📍</div>
+                                    <div class="contact-details">
+                                        <h3>Office Location</h3>
+                                        <p>2307 Ferrand Street Apt#118<br>Monroe, LA 71201</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-icon">🕒</div>
+                                    <div class="contact-details">
+                                        <h3>Office Hours</h3>
+                                        <p>Monday-Friday: 9:00 AM - 5:00 PM</p>
+                                        <p>Saturday: 10:00 AM - 2:00 PM</p>
+                                        <p>Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card emergency-card">
+                        <div class="card-header">
+                            <h2>Emergency Housing</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>If you need immediate housing assistance or are experiencing homelessness, please call our emergency hotline.</p>
+                            <div class="emergency-hotline">
+                                <p>Emergency Hotline</p>
+                                <a href="tel:+13185126373">(318) 512-6373</a>
+                                <p class="text-small">Available 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-card">
+                        <h3>How do I apply for affordable housing?</h3>
+                        <p>You can apply through the Monroe Housing Authority or directly with properties listed on our website. Each property may have different application requirements and income restrictions.</p>
+                    </div>
+
+                    <div class="faq-card">
+                        <h3>What documents do I need to apply?</h3>
+                        <p>Typically, you'll need identification, proof of income, Social Security cards for all household members, and references. Some programs may require additional documentation.</p>
+                    </div>
+
+                    <div class="faq-card">
+                        <h3>How long is the waiting list for Section 8?</h3>
+                        <p>Waiting list times vary depending on availability and demand. Currently, the average wait time is 12-18 months, but this can change. Check our resources page for current status.</p>
+                    </div>
+
+                    <div class="faq-card">
+                        <h3>What if I need immediate housing assistance?</h3>
+                        <p>For immediate needs, contact our emergency hotline at (318) 512-6373. We can connect you with emergency shelter options and rapid rehousing programs in the Monroe area.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Monroe Housing</h3>
+                    <p>Helping Monroe residents find safe, affordable housing options and resources.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="listings.html">Housing Listings</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="resources.html#assistance">Housing Assistance</a></li>
+                        <li><a href="resources.html#emergency">Emergency Housing</a></li>
+                        <li><a href="resources.html#section8">Section 8 Information</a></li>
+                        <li><a href="resources.html#nonprofits">Local Nonprofits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <address>
+                        <p>Monroe, Louisiana</p>
+                        <p>Email: siddharthabudhathoki55@gmail.com</p>
+                        <p>Phone: (318) 512-6373</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Monroe Affordable Housing. All rights reserved.</p>
+                <p>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

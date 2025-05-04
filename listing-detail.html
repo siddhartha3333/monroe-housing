@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkview Apartments - Monroe Affordable Housing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Monroe Housing</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html" class="active">Housing Listings</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="listing-detail-page">
+        <div class="container">
+            <div class="back-link">
+                <a href="listings.html">← Back to Listings</a>
+            </div>
+            
+            <div class="listing-header">
+                <h1>Parkview Apartments</h1>
+                <p class="location">📍 Downtown Monroe</p>
+            </div>
+
+            <div class="listing-detail-container">
+                <div class="listing-main">
+                    <div class="listing-image-large">
+                        <img src="https://images1.apartmenthomeliving.com/i2/GaDFiji-8SCl6r8BmSHYF6jmJ6KFA2PRvJrGRqN8tlQ/117/image.jpg" alt="Parkview Apartments">
+                    </div>
+
+                    <div class="listing-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="details">Details</button>
+                            <button class="tab-btn" data-tab="amenities">Amenities</button>
+                            <button class="tab-btn" data-tab="neighborhood">Neighborhood</button>
+                        </div>
+
+                        <div class="tab-content active" id="details">
+                            <div class="info-cards">
+                                <div class="info-card">
+                                    <h3>💰 Pricing</h3>
+                                    <div class="info-item">
+                                        <span>Price Range:</span>
+                                        <span>$550-750/month</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span>Security Deposit:</span>
+                                        <span>$500</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span>Application Fee:</span>
+                                        <span>$35</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span>Utilities:</span>
+                                        <span>Water & Trash Included</span>
+                                    </div>
+                                </div>
+
+                                <div class="info-card">
+                                    <h3>🏠 Property Info</h3>
+                                    <div class="info-item">
+                                        <span>Type:</span>
+                                        <span>Apartment Complex</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span>Bedrooms:</span>
+                                        <span>1-2 Bedrooms</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span>Bathrooms:</span>
+                                        <span>1 Bathroom</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span>Square Footage:</span>
+                                        <span>650-850 sq ft</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="description-section">
+                                <h3>Description</h3>
+                                <p>Parkview Apartments offers affordable 1 and 2 bedroom apartments in the heart of downtown Monroe. Our well-maintained community features spacious floor plans with modern amenities. Water and trash service are included in your rent, making budgeting easier. The property is conveniently located near public transportation, shopping centers, and dining options.</p>
+
+                                <h4>Income Requirements:</h4>
+                                <p>Income must be 2.5 times the monthly rent. Section 8 vouchers accepted. Income restrictions may apply for certain units.</p>
+
+                                <h4>Availability:</h4>
+                                <p>Available Now - 3 units (1 one-bedroom, 2 two-bedrooms)</p>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="amenities">
+                            <div class="amenities-container">
+                                <div class="amenities-column">
+                                    <h3>Unit Amenities</h3>
+                                    <ul class="amenities-list">
+                                        <li>Air Conditioning</li>
+                                        <li>Ceiling Fans</li>
+                                        <li>Dishwasher</li>
+                                        <li>Refrigerator</li>
+                                        <li>Stove/Oven</li>
+                                        <li>Vinyl Flooring</li>
+                                        <li>Window Coverings</li>
+                                        <li>Cable Ready</li>
+                                    </ul>
+                                </div>
+
+                                <div class="amenities-column">
+                                    <h3>Community Amenities</h3>
+                                    <ul class="amenities-list">
+                                        <li>On-site Laundry Facility</li>
+                                        <li>Controlled Access Entry</li>
+                                        <li>24-Hour Maintenance</li>
+                                        <li>Resident Lounge</li>
+                                        <li>Package Receiving</li>
+                                        <li>Recycling</li>
+                                        <li>Public Transportation Nearby</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="neighborhood">
+                            <div class="neighborhood-section">
+                                <h3>Neighborhood Information</h3>
+                                <p>Located in downtown Monroe, Parkview Apartments offers convenient access to shopping, dining, and entertainment. The area features several parks, public transportation options, and is within walking distance to many amenities.</p>
+                            </div>
+
+                            <div class="nearby-container">
+                                <div class="nearby-column">
+                                    <h4>Nearby Amenities</h4>
+                                    <ul class="nearby-list">
+                                        <li>
+                                            <strong>Monroe Public Library</strong>
+                                            <span>0.3 miles</span>
+                                        </li>
+                                        <li>
+                                            <strong>Downtown Shopping Center</strong>
+                                            <span>0.5 miles</span>
+                                        </li>
+                                        <li>
+                                            <strong>Riverside Park</strong>
+                                            <span>0.7 miles</span>
+                                        </li>
+                                        <li>
+                                            <strong>Monroe Medical Center</strong>
+                                            <span>1.2 miles</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="nearby-column">
+                                    <h4>Transportation</h4>
+                                    <ul class="nearby-list">
+                                        <li>
+                                            <strong>Bus Stop</strong>
+                                            <span>1 block away, Routes 12 & 15</span>
+                                        </li>
+                                        <li>
+                                            <strong>Bike Lanes</strong>
+                                            <span>Available on Main Street</span>
+                                        </li>
+                                        <li>
+                                            <strong>Highway Access</strong>
+                                            <span>I-20 entrance 1.5 miles south</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="listing-sidebar">
+                    <div class="contact-card">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <p>(318) 555-1234</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p>leasing@parkviewapts.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <p class="contact-label">Office</p>
+                                <p>123 Main St, Monroe, LA 71201</p>
+                            </div>
+                        </div>
+                        <button id="inquiryBtn" class="btn btn-primary btn-block">Send Inquiry</button>
+                    </div>
+
+                    <div class="application-card">
+                        <h3>Application Process</h3>
+                        <ol class="application-steps">
+                            <li>
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <p class="step-title">Submit Application</p>
+                                    <p>Complete the rental application form and pay the application fee.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <p class="step-title">Background Check</p>
+                                    <p>Property management will verify income, credit, and rental history.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <p class="step-title">Approval</p>
+                                    <p>If approved, you'll be notified to proceed with the lease signing.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <p class="step-title">Move In</p>
+                                    <p>Pay security deposit and first month's rent, then receive your keys.</p>
+                                </div>
+                            </li>
+                        </ol>
+                       
+
+                    <div class="fair-housing-notice">
+                        <h4>Fair Housing Notice</h4>
+                        <p>This property complies with Fair Housing laws which prohibit discrimination based on race, color, religion, sex, national origin, disability, or familial status.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="similar-listings">
+                <h2>Similar Properties</h2>
+                <div class="similar-grid">
+                    <div class="listing-card">
+                        <div class="listing-image">
+                            <img src="https://ap.rdcpix.com/99cb30c0724060f4a78aa9d5a7d4177cl-m3207070508rd-w480_h360.jpg" alt="Riverside Homes">
+                            <div class="price-tag">$650-850</div>
+                        </div>
+                        <div class="listing-details">
+                            <h3>Riverside Homes</h3>
+                            <p class="location">West Monroe</p>
+                            <div class="listing-type">Rental Houses</div>
+                            <a href="listing-detail.html" class="view-details">View Details →</a>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <div class="listing-image">
+                            <img src="https://ar.rdcpix.com/a207fe59294464326caeb626d86affd0c-f1932939849rd-w480_h360.jpg" alt="Ferrand Apartments">
+                            <div class="price-tag">$400-600</div>
+                        </div>
+                        <div class="listing-details">
+                            <h3>Ferrand Apartments</h3>
+                            <p class="location">Cental Monroe near ULM</p>
+                            <div class="listing-type">Apartment Complex</div>
+                            <a href="listing-detail.html" class="view-details">View Details →</a>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <div class="listing-image">
+                            <img src="https://images1.apartments.com/i2/IbC9VfecIfg9tiuQF-iGk1cdWftXjhHwD4-apK3WmSI/111/bayou-apartments---beautiful-condo-apartme-gulfport-ms-building-photo.jpg" alt="Bayou View Apartments">
+                            <div class="price-tag">$600-800</div>
+                        </div>
+                        <div class="listing-details">
+                            <h3>Bayou View Apartments</h3>
+                            <p class="location">West Monroe</p>
+                            <div class="listing-type">Apartment Complex</div>
+                            <a href="listing-detail.html" class="view-details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="inquiryModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Contact About Parkview Apartments</h2>
+            <p>Fill out the form below to inquire about this property.</p>
+            <form id="inquiryForm">
+                <div class="form-group">
+                    <label for="inquiryName">Name</label>
+                    <input type="text" id="inquiryName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="inquiryEmail">Email</label>
+                    <input type="email" id="inquiryEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="inquiryPhone">Phone</label>
+                    <input type="tel" id="inquiryPhone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="inquiryMessage">Message</label>
+                    <textarea id="inquiryMessage" name="message" rows="4" required>I'm interested in this property and would like more information...</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+            <div id="inquirySuccess" class="form-success">
+                <h3>Inquiry Sent!</h3>
+                <p>Thank you for your interest. A representative will contact you shortly.</p>
+                <button id="closeSuccess" class="btn btn-primary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Monroe Housing</h3>
+                    <p>Helping Monroe residents find safe, affordable housing options and resources.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="listings.html">Housing Listings</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="resources.html#assistance">Housing Assistance</a></li>
+                        <li><a href="resources.html#emergency">Emergency Housing</a></li>
+                        <li><a href="resources.html#section8">Section 8 Information</a></li>
+                        <li><a href="resources.html#nonprofits">Local Nonprofits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <address>
+                        <p>Monroe, Louisiana</p>
+                        <p>Email: siddharthabudhathoki55@gmail.com</p>
+                        <p>Phone: (318) 555-1234</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Monroe Affordable Housing. All rights reserved.</p>
+                <p>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

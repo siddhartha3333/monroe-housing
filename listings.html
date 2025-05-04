@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Listings - Monroe Affordable Housing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Monroe Housing</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html" class="active">Housing Listings</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="listings-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Housing Listings</h1>
+                <p>Browse affordable housing options available in Monroe, Louisiana</p>
+            </div>
+
+            <div class="filter-section">
+                <div class="search-filter">
+                    <input type="text" id="searchInput" placeholder="Search by name, location, or description...">
+                </div>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label for="housingType">Housing Type</label>
+                        <select id="housingType">
+                            <option value="all">All Types</option>
+                            <option value="apartment">Apartments</option>
+                            <option value="house">Houses</option>
+                            <option value="section8">Section 8</option>
+                            <option value="senior">Senior Housing</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="priceRange">Price Range</label>
+                        <select id="priceRange">
+                            <option value="all">All Prices</option>
+                            <option value="0-500">$0 - $500</option>
+                            <option value="500-750">$500 - $750</option>
+                            <option value="750-1000">$750 - $1000</option>
+                            <option value="1000+">$1000+</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="location">Location</label>
+                        <select id="location">
+                            <option value="all">All Locations</option>
+                            <option value="downtown">Downtown Monroe</option>
+                            <option value="west">West Monroe</option>
+                            <option value="south">South Monroe</option>
+                            <option value="north">North Monroe</option>
+                            <option value="east">East Monroe</option>
+                        </select>
+                    </div>
+                    <button id="applyFilters" class="filter-btn">Apply Filters</button>
+                </div>
+            </div>
+
+            <div class="results-count">
+                <p>Showing <span id="listingCount">6</span> results</p>
+            </div>
+
+            <div class="listing-grid" id="listingGrid">
+                <div class="listing-card" data-type="apartment" data-price="550-750" data-location="downtown">
+                    <div class="listing-image">
+                        <img src="https://images1.apartmenthomeliving.com/i2/GaDFiji-8SCl6r8BmSHYF6jmJ6KFA2PRvJrGRqN8tlQ/117/image.jpg" alt="Parkview Apartments">
+                        <div class="price-tag">$550-750</div>
+                    </div>
+                    <div class="listing-details">
+                        <h3>Parkview Apartments</h3>
+                        <p class="location">Downtown Monroe</p>
+                        <div class="listing-tags">
+                            <span class="tag">Apartment Complex</span>
+                            <span class="tag">Utilities Included</span>
+                        </div>
+                        <p class="listing-description">Affordable 1-2 bedroom apartments in downtown Monroe with utilities included. Close to public transportation and shopping.</p>
+                        <div class="listing-footer">
+                            <span class="availability">Available Now</span>
+                            <a href="listing-detail.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="listing-card" data-type="house" data-price="650-850" data-location="west">
+                    <div class="listing-image">
+                        <img src="https://ap.rdcpix.com/99cb30c0724060f4a78aa9d5a7d4177cl-m3207070508rd-w480_h360.jpg" alt="Riverside Homes">
+                        <div class="price-tag">$650-850</div>
+                    </div>
+                    <div class="listing-details">
+                        <h3>Riverside Homes</h3>
+                        <p class="location">West Monroe</p>
+                        <div class="listing-tags">
+                            <span class="tag">Rental Houses</span>
+                            <span class="tag">Pet Friendly</span>
+                        </div>
+                        <p class="listing-description">Single-family homes for rent with yards and pet-friendly policies. Great for families looking for space and privacy.</p>
+                        <div class="listing-footer">
+                            <span class="availability">2 Units Available</span>
+                            <a href="listing-detail.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="listing-card" data-type="section8" data-price="400-600" data-location="south">
+                    <div class="listing-image">
+                        <img src="https://ar.rdcpix.com/a207fe59294464326caeb626d86affd0c-f1932939849rd-w480_h360.jpg" alt="Ferrand Apartments">
+                        <div class="price-tag">$400-600</div>
+                    </div>
+                    <div class="listing-details">
+                        <h3>Ferrand Apartments</h3>
+                        <p class="location">South Monroe</p>
+                        <div class="listing-tags">
+                            <span class="tag">Section 8</span>
+                            <span class="tag">Community Center</span>
+                        </div>
+                        <p class="listing-description">Affordable Apartment complex near the university with community center, playground, and on-site management. </p>
+                        <div class="listing-footer">
+                            <span class="availability">Waitlist Open</span>
+                            <a href="listing-detail.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="listing-card" data-type="senior" data-price="500-700" data-location="north">
+                    <div class="listing-image">
+                        <img src="https://photos.zillowstatic.com/fp/042d6413c75784d61f77fbd944a434d0-cc_ft_960.jpg" alt="Oakwood Apartments">
+                        <div class="price-tag">$500-700</div>
+                    </div>
+                    <div class="listing-details">
+                        <h3>Oakwood Apartments</h3>
+                        <p class="location">North Monroe</p>
+                        <div class="listing-tags">
+                            <span class="tag">Senior Housing</span>
+                            <span class="tag">55+ Community</span>
+                        </div>
+                        <p class="listing-description">Senior living community for residents 55 and older. Features include community room, and planned activities.</p>
+                        <div class="listing-footer">
+                            <span class="availability">3 Units Available</span>
+                            <a href="listing-detail.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="listing-card" data-type="house" data-price="700-900" data-location="east">
+                    <div class="listing-image">
+                        <img src="https://photos.zillowstatic.com/fp/f3817608c08c68a38ee90e415d53222c-sc_1152_768.jpg" alt="Cedar Grove Townhomes">
+                        <div class="price-tag">$700-900</div>
+                    </div>
+                    <div class="listing-details">
+                        <h3>Cedar Grove Townhomes</h3>
+                        <p class="location">East Monroe</p>
+                        <div class="listing-tags">
+                            <span class="tag">Townhouses</span>
+                            <span class="tag">Washer/Dryer</span>
+                        </div>
+                        <p class="listing-description">Spacious 2-3 bedroom townhomes with washer/dryer hookups and small private patios. Close to schools and shopping centers.</p>
+                        <div class="listing-footer">
+                            <span class="availability">Available June 1</span>
+                            <a href="listing-detail.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="listing-card" data-type="apartment" data-price="600-800" data-location="west">
+                    <div class="listing-image">
+                        <img src="https://images1.apartments.com/i2/IbC9VfecIfg9tiuQF-iGk1cdWftXjhHwD4-apK3WmSI/111/bayou-apartments---beautiful-condo-apartme-gulfport-ms-building-photo.jpg" alt="Bayou View Apartments">
+                        <div class="price-tag">$600-800</div>
+                    </div>
+                    <div class="listing-details">
+                        <h3>Bayou View Apartments</h3>
+                        <p class="location">West Monroe</p>
+                        <div class="listing-tags">
+                            <span class="tag">Apartment Complex</span>
+                            <span class="tag">Pool</span>
+                        </div>
+                        <p class="listing-description">Affordable apartments with amenities including pool and fitness center. Various floor plans available to suit different needs.</p>
+                        <div class="listing-footer">
+                            <span class="availability">Available Now</span>
+                            <a href="listing-detail.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Monroe Housing</h3>
+                    <p>Helping Monroe residents find safe, affordable housing options and resources.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="listings.html">Housing Listings</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="resources.html#assistance">Housing Assistance</a></li>
+                        <li><a href="resources.html#emergency">Emergency Housing</a></li>
+                        <li><a href="resources.html#section8">Section 8 Information</a></li>
+                        <li><a href="resources.html#nonprofits">Local Nonprofits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <address>
+                        <p>Monroe, Louisiana</p>
+                        <p>Email: siddharthabudhathoki55@gmail.com</p>
+                        <p>Phone: (318) 555-1234</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Monroe Affordable Housing. All rights reserved.</p>
+                <p>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
