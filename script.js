@@ -20,25 +20,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    const inquiryBtns = document.querySelectorAll('.open-inquiry');
+    const inquiryBtn = document.getElementById('inquiryBtn');
     const inquiryModal = document.getElementById('inquiryModal');
     const inquiryForm = document.getElementById('inquiryForm');
     const inquirySuccess = document.getElementById('inquirySuccess');
-    const closeInquiry = document.getElementById('closeInquiry');
+    const closeModal = document.querySelector('.close-modal');
     const closeSuccess = document.getElementById('closeSuccess');
-    if (inquiryBtns.length) {
-        inquiryBtns.forEach(btn => btn.addEventListener('click', () => {
+
+    if (inquiryBtn && inquiryModal) {
+        inquiryBtn.addEventListener('click', () => {
             inquiryModal.style.display = 'block';
-        }));
-        closeInquiry?.addEventListener('click', () => {
+        });
+    }
+    if (closeModal && inquiryModal) {
+        closeModal.addEventListener('click', () => {
             inquiryModal.style.display = 'none';
         });
+    }
+    if (inquiryForm && inquirySuccess) {
         inquiryForm.addEventListener('submit', function(e) {
             e.preventDefault();
             inquiryForm.style.display = 'none';
             inquirySuccess.style.display = 'block';
         });
-        closeSuccess?.addEventListener('click', () => {
+    }
+    if (closeSuccess && inquiryModal) {
+        closeSuccess.addEventListener('click', () => {
             inquiryModal.style.display = 'none';
             setTimeout(() => {
                 inquiryForm.style.display = 'block';
@@ -80,10 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const title = (card.querySelector('h3')?.innerText || '').toLowerCase();
             const loc = (card.querySelector('.location')?.innerText || '').toLowerCase();
             const desc = (card.querySelector('.listing-description')?.innerText || '').toLowerCase();
-            const searchMatch = !searchTerm ||
-                                title.includes(searchTerm) ||
-                                loc.includes(searchTerm) ||
-                                desc.includes(searchTerm);
+            const searchMatch = !searchTerm || title.includes(searchTerm) || loc.includes(searchTerm) || desc.includes(searchTerm);
 
             if (typeMatch && locationMatch && priceMatch && searchMatch) {
                 card.style.display = '';
@@ -150,3 +154,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
